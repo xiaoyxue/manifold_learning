@@ -17,3 +17,10 @@ Y = lle(trainSet, 12, 2);
 Y = Y';
 figure;
 scatter(Y(:,1),Y(:,2),90,tt,'.');
+
+
+
+clc;
+clear;
+[trainSet,tt]=swiss_roll2(1600);
+[E,V] = leigs(trainSet, 'nn', 5, 2)  

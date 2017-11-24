@@ -2,10 +2,8 @@ function main()
 clc;
 clear;
 Times=10;
-Database='orl_32x32';
-trainNo= 5;
 % [trainSet,testSet,trainLabel,testLabel,classNo,faceNo]=LoadData(Database,trainNo);
-[trainSet,tt]=swiss_roll2(1600);
+[trainSet,tt]=swiss_roll2(500);
 % options.gnd=trainLabel;
 options.k=5;
 options.d=2;
